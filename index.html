@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Profile Dropdown</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Profile Dropdown</title>
+</head>
+
+<body>
+  <div class="navbar-new">
     <nav class="navbar">
       <img src="./assets/logo.png" width="50px" height="50px" class="navbar-logo" alt="logo" />
       <ul class="navbar-list">
@@ -28,8 +28,7 @@
             <i class="fa-solid fa-circle"></i>
           </div>
 
-          <span
-            >Victoria
+          <span>Victoria
             <i class="fa-solid fa-angle-down"></i>
           </span>
         </div>
@@ -49,7 +48,7 @@
             </a>
           </li>
 
-          
+
 
           <li class="profile-dropdown-list-item">
             <a href="#">
@@ -68,55 +67,57 @@
         </ul>
       </div>
     </nav>
+  </div>
 
-    <div class="myself">
+  <div class="myself">
 
 
-      <div class="hero-section">
+    <div class="hero-section">
 
-        <div class="faded-text">John Doe</div>
+      <!-- <div class="faded-text">John Doe</div> -->
 
-        <div class="hero-section-left">
-            <div class="hero-section-heading">Hi! John Doe</div>
-            
-            <div class="hero-section-heading hero-section-sub-heading">
-                I am a <span class="role"></span>
-            </div>
+      <div class="hero-section-left">
+        <div class="hero-section-heading">Hi! John Doe</div>
 
-            <div class="hero-section-description">
-                I’m a software developer and here is my portfolio website. Here you’ll
-                learn about my journey as a software developer.
-            </div>
-            
-            <div class="btn-pink" id="btn">Hire me</div>
-
+        <div class="hero-section-heading hero-section-sub-heading">
+          I am a <span class="role">Developer</span>
         </div>
 
-        <div class="hero-section-right">
-            <div class="absolute icons icon-dots">
-                <img src="./images/userAsset/dots.png" alt="" />
-              </div>
-              <div class="absolute icons icon-cube">
-                <img src="./images/userAsset/cube.png" alt="" />
-              </div>
-              <div class="absolute icons icon-circle">
-                <img src="./images/userAsset/circle.png" alt="" />
-              </div>
-              <div class="absolute icons icon-zigzag">
-                <img src="./images/userAsset/zigzags.png" alt="" />
-              </div>
-              <div class="absolute icons icon-plus">
-                <img src="./images/userAsset/plus.png" alt="" />
-              </div>
-              <div class="user-image">
-                <img src="./images/userAsset/UserImage.png" alt="" />
-              </div>
+        <div class="hero-section-description">
+          I’m a software developer and here is my portfolio website. Here you’ll
+          learn about my journey as a software developer.
         </div>
+
+        <div class="btn-pink" id="btn">Hire me</div>
+
+      </div>
+
+
+      <div class="hero-section-right">
+        <div class="absolute icons icon-dots">
+          <img src="./images/userAsset/dots.png" alt="" />
+        </div>
+        <div class="absolute icons icon-cube">
+          <img src="./images/userAsset/cube.png" alt="" />
+        </div>
+        <div class="absolute icons icon-circle">
+          <img src="./images/userAsset/circle.png" alt="" />
+        </div>
+        <div class="absolute icons icon-zigzag">
+          <img src="./images/userAsset/zigzags.png" alt="" />
+        </div>
+        <div class="absolute icons icon-plus">
+          <img src="./images/userAsset/plus.png" alt="" />
+        </div>
+        <div class="user-image">
+          <img src="./images/userAsset/UserImage.png" alt="" />
+        </div>
+      </div>
 
     </div>
-</div>
+  </div>
 
-<div class="project-section" id="projects">
+  <!-- <div class="project-section" id="projects">
     <h2 class="page-header">Projects</h2>
 
     <div class="project-container">
@@ -291,111 +292,207 @@
     <img src="./images/stack/Bash.svg" alt="" class="skills-logo" />
     <img src="./images/stack/Docker.svg" alt="" class="skills-logo" />
     <img src="./images/stack/K8s.svg" alt="" class="skills-logo" />
-  </div>
+  </div> -->
 
-
-
-</div>
-
-<div class="contactus-form-container" id="contactme">
-  <div class="container">
-
-    <h1 class="contactus-heading">Contact me</h1>
-
-    <h3 class="contactus-sub-heading">
-      Questions, thoughts, or just want to say hello?
-    </h3>
-
-
-    <div class="contactus-form-container">
-      <form class="form" action="">
-        <div class="formfield-container">
-          <input class="formfield" 
-          type="text" 
-          name="name" 
-          id="" 
-          placeholder="Enter your name" />
-
-          <input class="formfield" 
-          type="email" 
-          name="email" 
-          id="" 
-          placeholder="Enter your email address" />
-
-          <input class="formfield" 
-          type="text" 
-          name="subject" 
-          id="" 
-          placeholder="Enter your subject" />
-
-          <textarea name="message" 
-          id="" cols="30" rows="10" 
-          class="formfield formfield-textarea"
-          placeholder="Enter your message"></textarea>
-
-        </div>
-        
-        <div>
-          <button type="submit" class="btn-pink" id="submit-btn">
-            Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
-          </button>
-        </div>
-
-      </form>
-
-    </div>
-
-
-  </div>
-</div>
-
-<footer>
-  <div class="container">
-    <div class="footer-wrapper">
-      <div class="footer-faded-text">John Doe</div>
-
-      <div class="link-wrapper">
-        <div>
-          <a href="#projects">Projects</a>
-        </div>
-        <div>
-          <a href="#skills">Skills</a>
-        </div>
-        <div>
-          <a href="#contactme">Contact Me</a>
-        </div>
+  <h2> Projects</h2>
+  <div class="custom-slider-container">
+    <div class="custom-slider">
+      <!-- Duplicate slides for looping -->
+      <div class="custom-slide">
+        <h2 class="custom-title">Title 1</h2>
+        <img class="custom-slider-image"
+          src="https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique neque velit dignissimos repellendus
+          maiores eligendi, quia natus voluptates expedita eaque. Totam harum nemo, molestias quasi, eligendi odit quod,
+          praesentium corrupti sequi </p>
+        <button class="custom-button">See Demo</button>
       </div>
-
-      <div class="icon-wrapper">
-        <i class="fa-brands fa-linkedin icon"></i>
-        <i class="fa-brands fa-github icon"></i>
-        <i class="fa-brands fa-twitter icon"></i>
-        <i class="fa-brands fa-instagram icon"></i>
-        <i class="fa-regular fa-envelope icon"></i>
+      <!-- Add more slides here -->
+      <!-- Duplicate slides for looping -->
+      <div class="custom-slide">
+        <h2 class="custom-title">Title 1</h2>
+        <img class="custom-slider-image"
+          src="https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique neque velit dignissimos repellendus
+          maiores eligendi, quia natus voluptates expedita eaque. Totam harum nemo, molestias quasi, eligendi odit quod,
+          praesentium corrupti sequi </p>
+        <button class="custom-button">See Demo</button>
       </div>
-
+      <!-- Add more slides here -->
+      <!-- Duplicate slides for looping -->
+      <div class="custom-slide">
+        <h2 class="custom-title">Title 1</h2>
+        <img class="custom-slider-image"
+          src="https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique neque velit dignissimos repellendus
+          maiores eligendi, quia natus voluptates expedita eaque. Totam harum nemo, molestias quasi, eligendi odit quod,
+          praesentium corrupti sequi </p>
+        <button class="custom-button">See Demo</button>
+      </div>
+      <!-- Add more slides here -->
+      <!-- Duplicate slides for looping -->
+      <div class="custom-slide">
+        <h2 class="custom-title">Title 1</h2>
+        <img class="custom-slider-image"
+          src="https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique neque velit dignissimos repellendus
+          maiores eligendi, quia natus voluptates expedita eaque. Totam harum nemo, molestias quasi, eligendi odit quod,
+          praesentium corrupti sequi </p>
+        <button class="custom-button">See Demo</button>
+      </div>
+      <!-- Add more slides here -->
     </div>
   </div>
-</footer>
 
-</div>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-<script>
-var typeData = new Typed(".role", {
-strings: [
-"Full Stack Developer",
-"Web Developer",
-"UI-UX Designer",
-"Backend Developer",
-"Coder",
-],
-loop: true,
-typeSpeed: 100,
-backSpeed: 80,
-backDelay: 1000,
-});
-</script>
-    <script src="script.js"></script>
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Certificates</h2>
+  <div id="slider-container">
+    <div id="slider">
+      <div class="slide">
+        <img
+          src="https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 1">
+        <div class="title">Title 1</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 2">
+        <div class="title">Title 2</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 3">
+        <div class="title">Title 3</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 1">
+        <div class="title">Title 1</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 2">
+        <div class="title">Title 2</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Image 3">
+        <div class="title">Title 3</div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+  </div>
+
+
+
+
+  <div class="contactus-form-container" id="contactme">
+    <div class="container">
+
+      <h1 class="contactus-heading">Contact me</h1>
+
+      <h3 class="contactus-sub-heading">
+        Questions, thoughts, or just want to say hello?
+      </h3>
+
+
+      <div class="contactus-form-container">
+        <form class="form" action="">
+          <div class="formfield-container">
+            <input class="formfield" type="text" name="name" id="" placeholder="Enter your name" />
+
+            <input class="formfield" type="email" name="email" id="" placeholder="Enter your email address" />
+
+            <input class="formfield" type="text" name="subject" id="" placeholder="Enter your subject" />
+
+            <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea"
+              placeholder="Enter your message"></textarea>
+
+          </div>
+
+          <div>
+            <button type="submit" class="btn-pink" id="submit-btn">
+              Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="icon-wrapper">
+      <i class="fa-brands fa-linkedin icon"></i>
+      <i class="fa-brands fa-github icon"></i>
+      <i class="fa-brands fa-twitter icon"></i>
+      <i class="fa-brands fa-instagram icon"></i>
+      <i class="fa-regular fa-envelope icon"></i>
+    </div>
+
+    </div>
+    </div>
+  </footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+
+  </script>
+  <script src="script.js"></script>
+</body>
+
 </html>
